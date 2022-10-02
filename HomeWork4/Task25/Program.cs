@@ -21,12 +21,16 @@ int GetNumber(string message)
         return result; 
  }      
 
-Console.WriteLine("Введите первое число:"); 
-int numA = int.Parse(Console.ReadLine() ?? "");
+//Console.WriteLine("Введите первое число:"); 
+//int numA = int.Parse(Console.ReadLine() ?? "");
+int numA = GetNumber("Введите первое число:");
  
-Console.WriteLine("Введите второе число:");
-int numB = int.Parse(Console.ReadLine()??"");
+//Console.WriteLine("Введите второе число:");
+//int numB = int.Parse(Console.ReadLine()??"");
+int numB = GetNumber("Введите второе число:");
 
 double result = Math.Pow(numA, numB);
 
 Console.WriteLine($"Число {numA} возведенное в степень {numB} равно: {result}");
+
+ 
